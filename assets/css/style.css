@@ -35,8 +35,10 @@ h1 {
 }
 
 .logoNavbar {
-  width: 2%;
-
+  margin: 2px 3px 4px 2px;
+  grid-area: "navbar";
+  border-right: 2px;
+  padding-right: 5px;
 }
 
 @media (min-width:480px) {
