@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Open+Sans&display=swap');
-@import "nav.scss"
+@import "variables";
+@import "grid";
+@import "btn";
+
 
 * {
   color: rgb(229, 229, 229);
@@ -25,6 +28,8 @@ h1 {
   }
 
 }
+
+
 
 .formPrincipal {
   background-color: rgb(114, 113, 112);
@@ -132,12 +137,7 @@ div h5 {
   place-items: center;
 }
 
-.btn {
-  margin: 50px;
-  text-align: center;
-  background-color: rgb(63, 13, 23);
-  color: antiquewhite;
-}
+
 
 
 .logo {
@@ -493,85 +493,6 @@ h2 {
   padding: 10px;
   margin: 5%;
 }
-
-.container {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 80px 100px auto 60px;
-  grid-template-areas: "navbar navbar navbar navbar";
-}
-
-.container2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 80px 100px auto 60px;
-  grid-template-areas: "p p p p";
-}
-
-.containerBlog {
-  color: rgb(124, 31, 31);
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  grid-template-rows: 80px 180px auto auto 60px;
-  grid-template-areas: "navbar navbar navbar navbar"
-    "header header header header"
-    "main main main"
-    "sidebar""sidebar"
-    " footer""footer""footer""footer";
-}
-
-
-@media (min-width:576px) {
-  .containerBlog {
-    display: grid;
-    grid-template-rows: "navbar navbar navbar navbar"
-      "header header header header"
-      "main main main sidebar"
-      " footer footer footer";
-  }
-}
-
-@media (min-width:768px) {
-  .containerBlog {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: "navbar navbar navbar navbar navbar"
-      "header header header header header"
-      "main main main sidebar sidebar"
-      "footer footer footer footer";
-  }
-}
-
-.container4 {
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: left;
-}
-
-.container5 {
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.container5 {
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: right;
-}
-
-
-.container6 {
-  flex-direction: row;
-  align-items: flex-end;
-  color: #ccc;
-}
-
-
-
 
 
 .redes img {

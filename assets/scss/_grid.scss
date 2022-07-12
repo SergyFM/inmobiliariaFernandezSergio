@@ -1,0 +1,103 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  
+  @for $var from 1 to 10 {
+    .col-#{$var} {
+      width: 10% * $var;
+    }
+  }
+  
+  
+  @media (min-width:768px){
+    @for $var from 1 to 10 {
+      .col-md-#{$var}{
+        width: 10% * $var;
+      }
+    }
+  }
+  
+  @each $var in $justify {
+    .justify-content-#{$var}{
+      justify-content: $var;
+    }
+  }
+  
+  .container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px 100px auto 60px;
+    grid-template-areas: "navbar navbar navbar navbar";
+  }
+  
+  .container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px 100px auto 60px;
+    grid-template-areas: "p p p p";
+  }
+  
+  .containerBlog {
+    color: rgb(124, 31, 31);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    grid-template-rows: 80px 180px auto auto 60px;
+    grid-template-areas: "navbar navbar navbar navbar"
+      "header header header header"
+      "main main main"
+      "sidebar""sidebar"
+      " footer""footer""footer""footer";
+  }
+  
+  
+  @media (min-width:576px) {
+    .containerBlog {
+      display: grid;
+      grid-template-rows: "navbar navbar navbar navbar"
+        "header header header header"
+        "main main main sidebar"
+        " footer footer footer";
+    }
+  }
+  
+  @media (min-width:768px) {
+    .containerBlog {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: "navbar navbar navbar navbar navbar"
+        "header header header header header"
+        "main main main sidebar sidebar"
+        "footer footer footer footer";
+    }
+  }
+  
+  .container4 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  
+  .container5 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .container6 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: right;
+  }
+  
+  
+  .container7 {
+    flex-direction: row;
+    align-items: flex-end;
+    color: #ccc;
+  }
+  
