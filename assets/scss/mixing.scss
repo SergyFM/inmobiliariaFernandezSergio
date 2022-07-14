@@ -2,6 +2,12 @@
 @mixin propiedades ($ancho, $alto, $colorLetra){
     width: $ancho;
     height: $alto;
+    @if ($colorLetra == claro){
+        color: rgb(0, 0, 0)
+        }
+      @else  {
+        color: rgb(233, 237, 241);
+    }
     color: $colorLetra;
   }
 
@@ -10,7 +16,9 @@
 
 @mixin textColor ($color) {
 
-    @if ($color == white)
+
+    @if ($color == white){   
+    }
     color: white;
         
 }
