@@ -1,0 +1,16 @@
+
+@mixin propiedades ($ancho, $alto, $colorLetra){
+    width: $ancho;
+    height: $alto;
+    color: $colorLetra;
+  }
+
+
+
+
+@mixin textColor ($color) {
+
+    @if ($color == white)
+    color: white;
+        
+}
