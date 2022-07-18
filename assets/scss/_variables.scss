@@ -7,11 +7,6 @@ $justify: (
   between:space-between,
 );
 
-$colores:(
-  primario: rgb(120, 57, 57), 
-  secundario: rgb(255, 120, 0),
-  terciario: rgb(43, 145, 189)
-);
 
 $btn:(
   padding: 10px 20px,
@@ -26,3 +21,9 @@ $colorText: rgb(98, 54, 54);
 $colorDropMenu: rgb(48, 163, 172);
 $colorFormButton: #fff;
 $colorScrollBarThumb: #fff;
+
+$colores:(
+  primario: rgb(120, 57, 57), 
+  secundario: rgb(255, 120, 0),
+  terciario: rgb(43, 145, 189)
+);
