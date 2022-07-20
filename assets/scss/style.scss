@@ -5,15 +5,10 @@
 @import "btn";
 @import "mixin";
 @import "footer";
-@import "post"
+@import "post";
 
 
-* {
-  color: rgb(229, 229, 229);
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 .center_text {
   text-align: center;
