@@ -5,6 +5,7 @@
 @import "btn";
 @import "mixin";
 @import "footer";
+@import "post"
 
 
 * {
@@ -430,4 +431,8 @@ h3 {
   height: auto;
   size-adjust: small;
 
+}
+
+.navbar {
+  color: beige;
 }
