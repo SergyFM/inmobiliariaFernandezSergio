@@ -1,9 +1,12 @@
 .btn {
     padding: map-get($btn, padding);
-    border: map-get ($btn, bordes);
-    border-radius: map-get ($btn, radio );
-    color: rgb(230, 230, 230);
-    @include propiedades (100px,auto, rgb(143, 53, 53))
+    /* no funciona border: map-get ($btn, bordes);*/
+    // no funciona border-radius: map-get ($btn, radio );
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-style: oblique;
+    align-items: center;
+    /* no funciona @include propiedades (100px,auto, rgb(143, 53, 53)) */
   }
   
   @each $key, $var in $colores {
@@ -12,11 +15,4 @@
       background-color: $var;
     }
   
-  }
-
-  .btnPrincipal {
-    margin: 50px;
-    text-align: center;
-    background-color: rgb(183, 28, 59);
-    color: antiquewhite;
   }

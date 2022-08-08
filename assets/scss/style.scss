@@ -10,8 +10,10 @@
 @import "forms";
 
 
+
 .center_text {
   text-align: center;
+  color: aquamarine;
 }
 
 h1 {
@@ -67,7 +69,7 @@ div h5 {
 
 .bodyIndex {
   height: 800px;
-  background-image: url(../img/pexels-pixabay-268415.jpg);
+  background-color: rgb(115, 197, 227);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -101,7 +103,7 @@ div h5 {
 }
 
 .tarjeta__img {
-  width: 100%;
+  width: 50%;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   place-items: center;
@@ -127,19 +129,24 @@ div h5 {
   margin: 20px;
   padding: 50px;
   border: 40px;
+  place-items: center;
 }
 
 .servicios {
   margin: 30px 50px 30px 50px;
   padding: 30px 50px 30px 50px;
-  text-decoration: dotted;
-  text-align: left
+  text-align: left;
+}
+
+.listaServicios {
+  color: black;
 }
 
 .parrafosNosotros p {
   font-size: 30px;
   text-align: center;
   padding: 1%;
+  color: black;
 }
 
 .parrafosNosotros {
@@ -159,8 +166,8 @@ h3 {
 
 .imagenPrincipal {
   width: 50%;
-  margin-left: 10%;
-  grid-template-columns: repeat(1, 1fr);
+  margin-left: 25%;
+  // grid-template-columns: repeat(1, 1fr);
   gap: 1.5rem;
   place-items: center;
 }
@@ -387,4 +394,10 @@ h3 {
 
 .navbar {
   color: beige;
+}
+
+.logosRRSS {
+  align-items: center;
+  align-content: center;
+  size-adjust: small;
 }
