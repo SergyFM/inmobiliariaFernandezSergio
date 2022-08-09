@@ -1,12 +1,12 @@
 .btn {
     padding: map-get($btn, padding);
-    /* no funciona border: map-get ($btn, bordes);*/
-    // no funciona border-radius: map-get ($btn, radio );
+    /* hay algún error border: map-get ($btn, bordes);*/
+    // hay algún error border-radius: map-get ($btn, radio );
     color: rgb(0, 0, 0);
     font-size: large;
     font-style: oblique;
     align-items: center;
-    /* no funciona @include propiedades (100px,auto, rgb(143, 53, 53)) */
+    /* hay algún error @include propiedades (100px,auto, rgb(143, 53, 53)) */
   }
   
   @each $key, $var in $colores {
