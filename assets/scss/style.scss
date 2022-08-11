@@ -5,7 +5,6 @@
 @import "btn";
 @import "mixin";
 @import "footer";
-@import "post";
 @import "reset";
 @import "forms";
 
@@ -249,14 +248,7 @@ h3 {
 }
 
 
-.main {
-  display: grid;
-  grid-area: main;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  place-items: center;
-  padding: 30px;
-}
+
 
 .main__img {
   width: 300px;
